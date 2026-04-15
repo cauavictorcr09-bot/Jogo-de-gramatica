@@ -90,16 +90,7 @@ function pedirIdade() {
         // Se estiver correta, retorna a idade
         return idade;
     }
-    function verificarSituacao(idade) {
-    // Esta função recebe a idade como parâmetro
-    // Se a idade for 18 ou mais, retorna "Maior de idade"
-    // Caso contrário, retorna "Menor de idade"
-    if (idade >= 18) {
-        return "Maior de idade";
-    } else {
-        return "Menor de idade";
-    }
-}
+
 }
 function pedirSexo() {
     // Variável que vai guardar o valor digitado
@@ -260,14 +251,6 @@ function iniciarCadastro(){
         document.getElementById("resultado").innerHTML =
             "<h2>Cadastro cancelado</h2><p>O usuário cancelou o preenchimento.</p>";
         return;
-        let situacao = verificarSituacao(idade);
-
-    // Mostra o resultado na tela
-    document.getElementById("resultado").innerHTML =
-        "<h2>Resultado</h2>" +
-        "<p><strong>Idade:</strong> " + idade + " anos</p>" +
-        "<p><strong>Situação:</strong> " + situacao + "</p>";
-
     }
 
     let sexo = pedirSexo();
@@ -295,7 +278,10 @@ function iniciarCadastro(){
     document.getElementById("resultado").innerHTML =
         "<h2>Resultado</h2>" +
         "<p><strong>Nome completo:</strong> " + nome + "</p>" +
+        "<p><strong>Idade:</strong> " + idade + " anos</p>" +
         "<p><strong>Sexo:</strong> " + sexo + "</p>" +
         "<p><strong>Cidade:</strong> " + cidade + "</p>" +
-        "<p><strong>Estado Civil:</strong> " + estadoCivil + "</p>";
+        "<p><strong>Estado Civil:</strong> " + estadoCivil + "</p>" +
+        "<p><strong>parabens:</strong> " + nome + ", você pode jogar acesse o site do jogo pelo link abaixo!</p>" +
+        "<p><a href='https://wordwall.net/pt/resource/60997085' target='_blank'>Show time</a></p>";
 }
