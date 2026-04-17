@@ -283,5 +283,5 @@ function iniciarCadastro(){
         "<p><strong>Cidade:</strong> " + cidade + "</p>" +
         "<p><strong>Estado Civil:</strong> " + estadoCivil + "</p>" +
         "<p><strong>parabens:</strong> " + nome + ", você pode jogar acesse o site do jogo pelo link abaixo!</p>" +
-        "<p><a href='https://wordwall.net/pt/resource/60997085' target='_blank'>Show time</a></p>";
+        "<p><a href='https://jogo-grama-artica.vercel.app/' target='_blank'>Show time</a></p>";
 }
